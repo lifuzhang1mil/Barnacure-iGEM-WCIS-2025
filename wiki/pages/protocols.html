@@ -1,0 +1,270 @@
+{% extends "layout.html" %}
+
+{% block title %}Protocols - Barnacure | iGEM 2025{% endblock %}
+
+{% block content %}
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-white mb-4">
+                Laboratory <span class="text-emerald">Protocols</span>
+            </h1>
+            <p class="fs-5 text-light mx-auto" style="max-width: 800px;">
+                Detailed protocols and procedures used in the Barnacure project for reproducible research
+            </p>
+        </div>
+
+        <!-- Protocol Categories -->
+        <div class="row mb-5">
+            <div class="col-lg-4 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-header bg-dark-secondary border-emerald-dark">
+                        <h4 class="text-emerald mb-0">
+                            <i class="fas fa-flask me-2"></i>Protein Expression
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">E. coli Transformation</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Competent cell preparation and plasmid transformation</small>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">Protein Induction</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">IPTG induction and optimization</small>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">Cell Lysis</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Sonication and protein extraction</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-header bg-dark-secondary border-emerald-dark">
+                        <h4 class="text-emerald mb-0">
+                            <i class="fas fa-filter me-2"></i>Protein Purification
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">His-Tag Purification</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Ni-NTA affinity chromatography</small>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">Size Exclusion</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Final purification and buffer exchange</small>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">Concentration</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Protein concentration and storage</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-header bg-dark-secondary border-emerald-dark">
+                        <h4 class="text-emerald mb-0">
+                            <i class="fas fa-link me-2"></i>CLEA Formation
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">Cross-linking</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Glutaraldehyde cross-linking protocol</small>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">Washing</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">CLEA washing and storage</small>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">Characterization</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Activity and stability testing</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Assay Protocols -->
+        <div class="row mb-5">
+            <div class="col-lg-6 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-header bg-dark-secondary border-emerald-dark">
+                        <h4 class="text-emerald mb-0">
+                            <i class="fas fa-vial me-2"></i>Bioassays
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">Barnacle Settlement Assay</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">In vitro settlement inhibition testing</small>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">Protein Adhesion Assay</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Adhesion protein disruption testing</small>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">Cytotoxicity Assay</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Marine organism toxicity testing</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-header bg-dark-secondary border-emerald-dark">
+                        <h4 class="text-emerald mb-0">
+                            <i class="fas fa-chart-line me-2"></i>Analytical Methods
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">SDS-PAGE Analysis</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Protein purity and molecular weight analysis</small>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">Activity Assay</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Enzyme activity measurement</small>
+                            </li>
+                            <li class="mb-3">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-light">Stability Testing</span>
+                                    <button class="btn btn-outline-emerald btn-sm">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                                <small class="text-muted">Temperature and pH stability protocols</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Safety Protocols -->
+        <div class="card bg-dark-secondary border-emerald-dark">
+            <div class="card-body p-5">
+                <h3 class="text-emerald text-center mb-4">
+                    <i class="fas fa-shield-alt me-2"></i>Safety Protocols
+                </h3>
+                <div class="row">
+                    <div class="col-md-4 text-center mb-4">
+                        <i class="fas fa-hard-hat text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald-light">Personal Protection</h5>
+                        <p class="text-light small">
+                            Comprehensive PPE requirements and safety procedures for all laboratory work
+                        </p>
+                        <button class="btn btn-outline-emerald btn-sm">
+                            <i class="fas fa-download me-2"></i>Download Protocol
+                        </button>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <i class="fas fa-exclamation-triangle text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald-light">Emergency Procedures</h5>
+                        <p class="text-light small">
+                            Step-by-step emergency response protocols for spills, exposures, and accidents
+                        </p>
+                        <button class="btn btn-outline-emerald btn-sm">
+                            <i class="fas fa-download me-2"></i>Download Protocol
+                        </button>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <i class="fas fa-trash text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald-light">Waste Disposal</h5>
+                        <p class="text-light small">
+                            Proper disposal procedures for biological and chemical waste materials
+                        </p>
+                        <button class="btn btn-outline-emerald btn-sm">
+                            <i class="fas fa-download me-2"></i>Download Protocol
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

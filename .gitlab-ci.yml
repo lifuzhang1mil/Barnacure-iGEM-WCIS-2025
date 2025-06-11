@@ -1,0 +1,35 @@
+image: python:3.9
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip/
+    - venv/
+
+before_script:
+  - python -V
+  - pip install virtualenv
+  - virtualenv venv
+  - source venv/bin/activate
+  - pip install -r dependencies.txt
+
+test:
+  stage: test
+  script:
+    - python -m py_compile app.py
+    - echo "All Python files compiled successfully"
+
+pages:
+  stage: deploy
+  script:
+    - python app.py build
+    - mv public/ public_html/
+    - mkdir public/
+    - mv public_html/* public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

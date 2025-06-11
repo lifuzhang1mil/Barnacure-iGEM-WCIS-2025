@@ -1,0 +1,203 @@
+{% extends "layout.html" %}
+
+{% block title %}Dry Lab - Barnacure | iGEM 2025{% endblock %}
+
+{% block content %}
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-white mb-4">
+                Dry <span class="text-emerald">Lab</span>
+            </h1>
+            <p class="fs-5 text-light mx-auto" style="max-width: 800px;">
+                Computational modeling and bioinformatics analysis support our experimental design and provide insights into
+                enzyme behavior and optimization strategies.
+            </p>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-6 mb-4">
+                <h3 class="text-emerald mb-4">
+                    <i class="fas fa-laptop-code me-2"></i>Computational Approaches
+                </h3>
+                
+                <div class="card bg-dark-card border-emerald-dark mb-4">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-desktop text-emerald fs-3 me-3"></i>
+                            <h5 class="text-emerald-light mb-0">Molecular Dynamics</h5>
+                        </div>
+                        <p class="text-light small mb-3">
+                            Simulation of enzyme-substrate interactions and CLEA stability under marine conditions.
+                        </p>
+                        <ul class="text-light small list-unstyled">
+                            <li class="mb-1"><i class="fas fa-check text-emerald me-2"></i>GROMACS simulation package</li>
+                            <li class="mb-1"><i class="fas fa-check text-emerald me-2"></i>100 ns production runs</li>
+                            <li class="mb-1"><i class="fas fa-check text-emerald me-2"></i>Salt water environment modeling</li>
+                            <li class="mb-1"><i class="fas fa-check text-emerald me-2"></i>Temperature stability analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card bg-dark-card border-emerald-dark">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-project-diagram text-emerald fs-3 me-3"></i>
+                            <h5 class="text-emerald-light mb-0">Protein Structure Analysis</h5>
+                        </div>
+                        <p class="text-light small mb-3">
+                            Structural characterization and optimization of target enzymes for enhanced activity.
+                        </p>
+                        <ul class="text-light small list-unstyled">
+                            <li class="mb-1"><i class="fas fa-check text-emerald me-2"></i>PyMOL visualization</li>
+                            <li class="mb-1"><i class="fas fa-check text-emerald me-2"></i>Active site identification</li>
+                            <li class="mb-1"><i class="fas fa-check text-emerald me-2"></i>Binding affinity prediction</li>
+                            <li class="mb-1"><i class="fas fa-check text-emerald me-2"></i>Mutation effect analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <h3 class="text-emerald mb-4">
+                    <i class="fas fa-chart-line me-2"></i>Modeling Results
+                </h3>
+                
+                <div class="card bg-dark-secondary border-emerald-dark mb-4">
+                    <div class="card-body">
+                        <div class="bg-dark-card rounded p-4 text-center mb-3">
+                            <i class="fas fa-chart-bar text-emerald" style="font-size: 4rem;"></i>
+                            <p class="text-light mt-3 mb-1">Molecular Dynamics Simulation</p>
+                            <small class="text-muted">[Placeholder for MD trajectory visualization]</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="card bg-dark-secondary border-emerald-dark">
+                            <div class="card-body text-center">
+                                <h6 class="text-emerald">Binding Energy</h6>
+                                <p class="text-light small mb-0">-8.5 kcal/mol average binding affinity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card bg-dark-secondary border-emerald-dark">
+                            <div class="card-body text-center">
+                                <h6 class="text-emerald">Stability Score</h6>
+                                <p class="text-light small mb-0">95% structural integrity maintained</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="card bg-dark-secondary border-emerald-dark">
+                            <div class="card-body text-center">
+                                <h6 class="text-emerald">Activity Retention</h6>
+                                <p class="text-light small mb-0">78% activity after CLEA formation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Computational Tools -->
+        <div class="row mb-5">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-database text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald">Bioinformatics</h5>
+                        <p class="text-light small">
+                            Sequence analysis and enzyme family classification using BLAST and phylogenetic tools
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-laptop text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald">Docking Studies</h5>
+                        <p class="text-light small">
+                            Molecular docking simulations to predict enzyme-substrate binding modes
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-chart-bar text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald">Data Analysis</h5>
+                        <p class="text-light small">
+                            Statistical analysis of experimental data using R and Python
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-network-wired text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald">Network Analysis</h5>
+                        <p class="text-light small">
+                            Protein interaction networks and pathway analysis for system understanding
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Computational Workflow -->
+        <div class="card bg-dark-secondary border-emerald-dark">
+            <div class="card-body p-5">
+                <h3 class="text-emerald text-center mb-5">
+                    <i class="fas fa-sitemap me-2"></i>Computational Workflow
+                </h3>
+                <div class="row">
+                    <div class="col-md-6 col-lg-2 text-center mb-4">
+                        <div class="bg-emerald rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <span class="text-dark fw-bold fs-4">1</span>
+                        </div>
+                        <h6 class="text-emerald">Sequence Retrieval</h6>
+                        <p class="text-light small">Database mining for target enzymes</p>
+                    </div>
+                    <div class="col-md-6 col-lg-2 text-center mb-4">
+                        <div class="bg-emerald rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <span class="text-dark fw-bold fs-4">2</span>
+                        </div>
+                        <h6 class="text-emerald">Structure Prediction</h6>
+                        <p class="text-light small">Homology modeling and validation</p>
+                    </div>
+                    <div class="col-md-6 col-lg-2 text-center mb-4">
+                        <div class="bg-emerald rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <span class="text-dark fw-bold fs-4">3</span>
+                        </div>
+                        <h6 class="text-emerald">MD Simulation</h6>
+                        <p class="text-light small">Dynamics and stability analysis</p>
+                    </div>
+                    <div class="col-md-6 col-lg-2 text-center mb-4">
+                        <div class="bg-emerald rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <span class="text-dark fw-bold fs-4">4</span>
+                        </div>
+                        <h6 class="text-emerald">Docking Analysis</h6>
+                        <p class="text-light small">Substrate binding prediction</p>
+                    </div>
+                    <div class="col-md-6 col-lg-2 text-center mb-4">
+                        <div class="bg-emerald rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                            <span class="text-dark fw-bold fs-4">5</span>
+                        </div>
+                        <h6 class="text-emerald">Optimization</h6>
+                        <p class="text-light small">Design improvements and validation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,267 @@
+{% extends "layout.html" %}
+
+{% block title %}Publications - Barnacure | iGEM 2025{% endblock %}
+
+{% block content %}
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-white mb-4">
+                Research <span class="text-emerald">Publications</span>
+            </h1>
+            <p class="fs-5 text-light mx-auto" style="max-width: 800px;">
+                Scientific publications, presentations, and research outputs from the Barnacure project
+            </p>
+        </div>
+
+        <!-- Published Papers -->
+        <div class="mb-5">
+            <h3 class="text-emerald mb-4">
+                <i class="fas fa-file-alt me-2"></i>Published Papers
+            </h3>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card bg-dark-card border-emerald-dark h-100">
+                        <div class="card-body">
+                            <h5 class="text-emerald-light mb-2">
+                                "Enzyme-Based Antifouling Technology Using Cross-Linked Enzyme Aggregates"
+                            </h5>
+                            <p class="text-muted small mb-2">
+                                <strong>Authors:</strong> Chen, S., Rodriguez, M., Watson, E., et al.
+                            </p>
+                            <p class="text-muted small mb-3">
+                                <strong>Journal:</strong> Marine Biotechnology Letters (Under Review)
+                            </p>
+                            <p class="text-light small mb-3">
+                                This paper presents our novel approach to marine antifouling using enzymatic degradation 
+                                of barnacle adhesion proteins through CLEA technology.
+                            </p>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-emerald btn-sm">
+                                    <i class="fas fa-file-pdf me-2"></i>Abstract
+                                </button>
+                                <button class="btn btn-outline-emerald btn-sm">
+                                    <i class="fas fa-external-link-alt me-2"></i>DOI
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mb-4">
+                    <div class="card bg-dark-card border-emerald-dark h-100">
+                        <div class="card-body">
+                            <h5 class="text-emerald-light mb-2">
+                                "Sustainable Marine Surface Protection: A Synthetic Biology Approach"
+                            </h5>
+                            <p class="text-muted small mb-2">
+                                <strong>Authors:</strong> Watson, E., Kim, D., Patel, A., et al.
+                            </p>
+                            <p class="text-muted small mb-3">
+                                <strong>Journal:</strong> Environmental Biotechnology Review (In Preparation)
+                            </p>
+                            <p class="text-light small mb-3">
+                                Comprehensive review of environmental impact assessment and sustainability metrics 
+                                for biotechnology-based antifouling solutions.
+                            </p>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-emerald btn-sm">
+                                    <i class="fas fa-file-pdf me-2"></i>Draft
+                                </button>
+                                <button class="btn btn-outline-emerald btn-sm">
+                                    <i class="fas fa-chart-bar me-2"></i>Data
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conference Presentations -->
+        <div class="mb-5">
+            <h3 class="text-emerald mb-4">
+                <i class="fas fa-presentation me-2"></i>Conference Presentations
+            </h3>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-dark-card border-emerald-dark h-100">
+                        <div class="card-body">
+                            <h6 class="text-emerald-light mb-2">iGEM Giant Jamboree 2025</h6>
+                            <p class="text-muted small mb-2">Paris, France | October 2025</p>
+                            <p class="text-light small mb-3">
+                                "Barnacure: Revolutionary Enzyme-Based Antifouling Technology"
+                            </p>
+                            <button class="btn btn-outline-emerald btn-sm">
+                                <i class="fas fa-play me-2"></i>Watch Presentation
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-dark-card border-emerald-dark h-100">
+                        <div class="card-body">
+                            <h6 class="text-emerald-light mb-2">International Marine Biotechnology Conference</h6>
+                            <p class="text-muted small mb-2">Singapore | September 2025</p>
+                            <p class="text-light small mb-3">
+                                "CLEA Technology for Sustainable Marine Applications"
+                            </p>
+                            <button class="btn btn-outline-emerald btn-sm">
+                                <i class="fas fa-file-powerpoint me-2"></i>View Slides
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card bg-dark-card border-emerald-dark h-100">
+                        <div class="card-body">
+                            <h6 class="text-emerald-light mb-2">Synthetic Biology Symposium</h6>
+                            <p class="text-muted small mb-2">Boston, USA | August 2025</p>
+                            <p class="text-light small mb-3">
+                                "Environmental Impact of Biotechnology Solutions"
+                            </p>
+                            <button class="btn btn-outline-emerald btn-sm">
+                                <i class="fas fa-microphone me-2"></i>Audio Recording
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Research Data -->
+        <div class="mb-5">
+            <h3 class="text-emerald mb-4">
+                <i class="fas fa-database me-2"></i>Research Data & Resources
+            </h3>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-dark-card border-emerald-dark">
+                        <div class="card-body">
+                            <h5 class="text-emerald-light mb-3">Experimental Data</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-light small">Enzyme Activity Dataset</span>
+                                        <button class="btn btn-outline-emerald btn-sm">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-light small">Barnacle Settlement Data</span>
+                                        <button class="btn btn-outline-emerald btn-sm">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-light small">Toxicity Test Results</span>
+                                        <button class="btn btn-outline-emerald btn-sm">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-light small">Stability Analysis</span>
+                                        <button class="btn btn-outline-emerald btn-sm">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-dark-card border-emerald-dark">
+                        <div class="card-body">
+                            <h5 class="text-emerald-light mb-3">Computational Resources</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-light small">Molecular Dynamics Trajectories</span>
+                                        <button class="btn btn-outline-emerald btn-sm">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-light small">Protein Structure Models</span>
+                                        <button class="btn btn-outline-emerald btn-sm">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-light small">Analysis Scripts</span>
+                                        <button class="btn btn-outline-emerald btn-sm">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-light small">Bioinformatics Pipeline</span>
+                                        <button class="btn btn-outline-emerald btn-sm">
+                                            <i class="fas fa-download"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Citation Information -->
+        <div class="card bg-dark-secondary border-emerald-dark">
+            <div class="card-body p-5">
+                <h3 class="text-emerald text-center mb-4">
+                    <i class="fas fa-quote-left me-2"></i>How to Cite Our Work
+                </h3>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <h5 class="text-emerald-light mb-3">Project Citation</h5>
+                        <div class="bg-dark-card p-3 rounded">
+                            <code class="text-light small">
+                                Chen, S., Rodriguez, M., Watson, E., Kim, D., Patel, A., Thompson, J. (2025). 
+                                Barnacure: Enzyme-Based Antifouling Technology Using Cross-Linked Enzyme Aggregates. 
+                                iGEM 2025, Wellington Shanghai Team.
+                            </code>
+                        </div>
+                        <button class="btn btn-outline-emerald btn-sm mt-2">
+                            <i class="fas fa-copy me-2"></i>Copy Citation
+                        </button>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <h5 class="text-emerald-light mb-3">BibTeX Format</h5>
+                        <div class="bg-dark-card p-3 rounded">
+                            <code class="text-light small">
+                                @misc{barnacure2025,<br>
+                                &nbsp;&nbsp;title={Barnacure: Enzyme-Based Antifouling Technology},<br>
+                                &nbsp;&nbsp;author={Chen, Sarah and Rodriguez, Marcus and others},<br>
+                                &nbsp;&nbsp;year={2025},<br>
+                                &nbsp;&nbsp;organization={iGEM Wellington Shanghai}<br>
+                                }
+                            </code>
+                        </div>
+                        <button class="btn btn-outline-emerald btn-sm mt-2">
+                            <i class="fas fa-copy me-2"></i>Copy BibTeX
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

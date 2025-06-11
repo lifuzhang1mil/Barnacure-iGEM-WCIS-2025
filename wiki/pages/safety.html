@@ -1,0 +1,231 @@
+{% extends "layout.html" %}
+
+{% block title %}Safety - Barnacure | iGEM 2025{% endblock %}
+
+{% block content %}
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-white mb-4">
+                <span class="text-emerald">Safety</span> & Ethics
+            </h1>
+            <p class="fs-5 text-light mx-auto" style="max-width: 800px;">
+                Safety is paramount in our research. We follow strict protocols and ethical guidelines to ensure responsible
+                development of biotechnology solutions.
+            </p>
+        </div>
+
+        <!-- Safety Overview -->
+        <div class="row mb-5">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-shield-alt text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald">Biosafety Level 1</h5>
+                        <p class="text-light small">
+                            All experiments conducted under BSL-1 conditions with appropriate containment measures
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-check-circle text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald">Risk Assessment</h5>
+                        <p class="text-light small">
+                            Comprehensive risk evaluation for all biological materials and procedures
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-exclamation-triangle text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald">Environmental Impact</h5>
+                        <p class="text-light small">
+                            Thorough assessment of potential environmental effects and mitigation strategies
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-file-alt text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald">Documentation</h5>
+                        <p class="text-light small">
+                            Complete documentation of all safety protocols and emergency procedures
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Safety Protocols -->
+        <div class="row mb-5">
+            <div class="col-lg-6 mb-4">
+                <h3 class="text-emerald mb-4">
+                    <i class="fas fa-hard-hat me-2"></i>Laboratory Safety Protocols
+                </h3>
+                
+                <div class="card bg-dark-card border-emerald-dark mb-4">
+                    <div class="card-body">
+                        <h5 class="text-emerald-light mb-3">Personal Protective Equipment</h5>
+                        <ul class="text-light list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Safety goggles and face shields for all procedures</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Nitrile gloves changed between different materials</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Lab coats and closed-toe shoes mandatory</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Respiratory protection when handling chemicals</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card bg-dark-card border-emerald-dark mb-4">
+                    <div class="card-body">
+                        <h5 class="text-emerald-light mb-3">Biological Containment</h5>
+                        <ul class="text-light list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Biosafety cabinet for all microbial work</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Autoclave sterilization of all waste materials</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Restricted access to authorized personnel only</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Regular decontamination of work surfaces</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card bg-dark-card border-emerald-dark">
+                    <div class="card-body">
+                        <h5 class="text-emerald-light mb-3">Chemical Safety</h5>
+                        <ul class="text-light list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Proper storage and labeling of all chemicals</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Fume hood use for volatile compounds</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Safety data sheets readily available</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Spill kits and emergency procedures posted</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <h3 class="text-emerald mb-4">
+                    <i class="fas fa-clipboard-check me-2"></i>Risk Assessment Matrix
+                </h3>
+                
+                <div class="card bg-dark-secondary border-emerald-dark mb-4">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-dark table-sm">
+                                <thead>
+                                    <tr class="border-bottom border-emerald">
+                                        <th class="text-emerald">Risk Factor</th>
+                                        <th class="text-emerald text-center">Probability</th>
+                                        <th class="text-emerald text-center">Severity</th>
+                                        <th class="text-emerald text-center">Risk Level</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-light">
+                                    <tr>
+                                        <td>Bacterial contamination</td>
+                                        <td class="text-center">Low</td>
+                                        <td class="text-center">Medium</td>
+                                        <td class="text-center text-warning">Low</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chemical exposure</td>
+                                        <td class="text-center">Low</td>
+                                        <td class="text-center">High</td>
+                                        <td class="text-center text-warning">Medium</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipment malfunction</td>
+                                        <td class="text-center">Medium</td>
+                                        <td class="text-center">Low</td>
+                                        <td class="text-center text-success">Low</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Environmental release</td>
+                                        <td class="text-center">Very Low</td>
+                                        <td class="text-center">High</td>
+                                        <td class="text-center text-success">Low</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="text-emerald-light mb-3">Emergency Procedures</h5>
+                <div class="mb-3">
+                    <div class="card bg-dark-secondary border-emerald-dark">
+                        <div class="card-body">
+                            <h6 class="text-emerald">Spill Response</h6>
+                            <p class="text-light small mb-0">
+                                Immediate containment, personnel evacuation if necessary, and proper cleanup using appropriate
+                                neutralizing agents.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="card bg-dark-secondary border-emerald-dark">
+                        <div class="card-body">
+                            <h6 class="text-emerald">Exposure Incident</h6>
+                            <p class="text-light small mb-0">
+                                First aid administration, medical evaluation, and incident reporting to safety committee.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="card bg-dark-secondary border-emerald-dark">
+                        <div class="card-body">
+                            <h6 class="text-emerald">Equipment Failure</h6>
+                            <p class="text-light small mb-0">
+                                Immediate shutdown, area isolation, and technical assessment before resuming operations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ethical Considerations -->
+        <div class="card bg-dark-secondary border-emerald-dark">
+            <div class="card-body p-5">
+                <h3 class="text-emerald text-center mb-5">
+                    <i class="fas fa-balance-scale me-2"></i>Ethical Considerations
+                </h3>
+                <div class="row">
+                    <div class="col-md-4 text-center mb-4">
+                        <i class="fas fa-shield-alt text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald-light">Environmental Responsibility</h5>
+                        <p class="text-light small">
+                            Our research prioritizes environmental protection and sustainable development, ensuring minimal
+                            ecological impact.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <i class="fas fa-eye text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald-light">Transparency</h5>
+                        <p class="text-light small">
+                            Open communication about research methods, results, and potential risks with stakeholders and the
+                            scientific community.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                        <i class="fas fa-gavel text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald-light">Regulatory Compliance</h5>
+                        <p class="text-light small">
+                            Adherence to all relevant regulations and guidelines for biotechnology research and marine applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

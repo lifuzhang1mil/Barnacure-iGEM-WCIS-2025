@@ -1,0 +1,174 @@
+{% extends "layout.html" %}
+
+{% block title %}Contact - Barnacure | iGEM 2025{% endblock %}
+
+{% block content %}
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-white mb-4">
+                Get in <span class="text-emerald">Touch</span>
+            </h1>
+            <p class="fs-5 text-light mx-auto" style="max-width: 800px;">
+                Interested in our research? Have questions about Barnacure? We'd love to hear from you and discuss potential
+                collaborations.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 mb-5">
+                <h3 class="text-emerald mb-4">
+                    <i class="fas fa-address-book me-2"></i>Contact Information
+                </h3>
+                
+                <div class="card bg-dark-card border-emerald-dark mb-4">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope text-emerald fs-2 me-4"></i>
+                            <div>
+                                <h5 class="text-emerald-light mb-1">Email</h5>
+                                <p class="text-light mb-0">barnacure.igem@university.edu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-dark-card border-emerald-dark mb-4">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-phone text-emerald fs-2 me-4"></i>
+                            <div>
+                                <h5 class="text-emerald-light mb-1">Phone</h5>
+                                <p class="text-light mb-0">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-dark-card border-emerald-dark mb-4">
+                    <div class="card-body">
+                        <div class="d-flex align-items-start">
+                            <i class="fas fa-map-marker-alt text-emerald fs-2 me-4 mt-1"></i>
+                            <div>
+                                <h5 class="text-emerald-light mb-1">Address</h5>
+                                <p class="text-light mb-0">
+                                    Marine Biology Department<br>
+                                    University Research Center<br>
+                                    123 Science Drive, Lab Building 456<br>
+                                    City, State 12345
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <h5 class="text-emerald-light mb-3">Follow Our Research</h5>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-outline-emerald">
+                            <i class="fas fa-flask me-2"></i>iGEM Registry
+                        </button>
+                        <button class="btn btn-outline-emerald">
+                            <i class="fas fa-blog me-2"></i>Research Blog
+                        </button>
+                        <button class="btn btn-outline-emerald">
+                            <i class="fas fa-share-alt me-2"></i>Social Media
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-5">
+                <h3 class="text-emerald mb-4">
+                    <i class="fas fa-paper-plane me-2"></i>Send us a Message
+                </h3>
+                
+                <div class="card bg-dark-card border-emerald-dark">
+                    <div class="card-body">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label text-emerald-light">First Name</label>
+                                    <input type="text" class="form-control bg-dark-secondary border-emerald-dark text-light" id="firstName" placeholder="Your first name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label text-emerald-light">Last Name</label>
+                                    <input type="text" class="form-control bg-dark-secondary border-emerald-dark text-light" id="lastName" placeholder="Your last name">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-emerald-light">Email Address</label>
+                                <input type="email" class="form-control bg-dark-secondary border-emerald-dark text-light" id="email" placeholder="your.email@example.com">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="organization" class="form-label text-emerald-light">Organization (Optional)</label>
+                                <input type="text" class="form-control bg-dark-secondary border-emerald-dark text-light" id="organization" placeholder="Your university or company">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label text-emerald-light">Subject</label>
+                                <input type="text" class="form-control bg-dark-secondary border-emerald-dark text-light" id="subject" placeholder="What would you like to discuss?">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="message" class="form-label text-emerald-light">Message</label>
+                                <textarea class="form-control bg-dark-secondary border-emerald-dark text-light" id="message" rows="5" placeholder="Tell us about your interest in our research or any questions you have..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-emerald w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Collaboration Opportunities -->
+        <div class="mt-5">
+            <h3 class="text-emerald text-center mb-4">
+                <i class="fas fa-handshake me-2"></i>Collaboration Opportunities
+            </h3>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark-card border-emerald-dark h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-microscope text-emerald fs-1 mb-3"></i>
+                            <h5 class="text-emerald-light">Research Partnerships</h5>
+                            <p class="text-light small">
+                                Collaborate with our team on marine biotechnology research and antifouling technology development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark-card border-emerald-dark h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-industry text-emerald fs-1 mb-3"></i>
+                            <h5 class="text-emerald-light">Industry Connections</h5>
+                            <p class="text-light small">
+                                Connect with maritime industry professionals interested in sustainable antifouling solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-dark-card border-emerald-dark h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-graduation-cap text-emerald fs-1 mb-3"></i>
+                            <h5 class="text-emerald-light">Educational Outreach</h5>
+                            <p class="text-light small">
+                                Partner with us for educational programs and science communication initiatives.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

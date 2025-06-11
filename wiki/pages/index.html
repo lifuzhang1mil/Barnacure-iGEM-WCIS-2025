@@ -1,0 +1,244 @@
+{% extends "layout.html" %}
+
+{% block title %}Barnacure - Enzyme-Based Antifouling Technology | iGEM 2025{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section min-vh-100 d-flex align-items-center position-relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 opacity-10">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-emerald"></div>
+        <div class="position-absolute top-25 start-25 bg-emerald-glow rounded-circle blur-3xl"></div>
+        <div class="position-absolute bottom-25 end-25 bg-emerald-glow-lg rounded-circle blur-3xl"></div>
+    </div>
+
+    <div class="container text-center position-relative z-1">
+        <div class="d-flex justify-content-center mb-4">
+            <div class="d-flex align-items-center gap-4 text-emerald">
+                <i class="fas fa-microscope fs-1"></i>
+                <i class="fas fa-water fs-1"></i>
+            </div>
+        </div>
+
+        <h1 class="display-1 fw-bold text-white mb-4">
+            <span class="text-emerald">Barna</span>cure
+        </h1>
+
+        <p class="fs-3 text-emerald-light mb-3 fw-light">Enzyme-Based Antifouling Technology</p>
+
+        <p class="fs-5 text-light mb-5 mx-auto" style="max-width: 800px;">
+            Revolutionary synthetic biology solution using Cross-Linked Enzyme Aggregates (CLEAs) to prevent barnacle
+            attachment on marine surfaces through sustainable biotechnology.
+        </p>
+
+        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center mb-5">
+            <a href="{{ url_for('project') }}" class="btn btn-emerald btn-lg px-4 py-3">
+                <i class="fas fa-search me-2"></i>Explore Our Research
+            </a>
+            <a href="{{ url_for('team') }}" class="btn btn-outline-emerald btn-lg px-4 py-3">
+                <i class="fas fa-users me-2"></i>Meet the Team
+            </a>
+        </div>
+
+        <div class="row g-4 mx-auto" style="max-width: 1000px;">
+            <div class="col-md-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-leaf text-emerald fs-2 mb-3"></i>
+                        <h5 class="text-emerald">Sustainable Solution</h5>
+                        <p class="text-light small">Eco-friendly enzyme technology replacing toxic antifouling paints</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-ship text-emerald fs-2 mb-3"></i>
+                        <h5 class="text-emerald">Marine Innovation</h5>
+                        <p class="text-light small">Protecting marine ecosystems while preventing biofouling</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-dna text-emerald fs-2 mb-3"></i>
+                        <h5 class="text-emerald">Synthetic Biology</h5>
+                        <p class="text-light small">Advanced CLEA technology for targeted barnacle prevention</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-absolute bottom-4 start-50 translate-middle-x">
+        <a href="{{ url_for('project') }}" class="text-emerald text-decoration-none">
+            <i class="fas fa-chevron-down fs-4 animate-bounce"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Quick Overview Section -->
+<section class="py-5 bg-dark-secondary">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="display-5 fw-bold text-white mb-4">
+                    The <span class="text-emerald">Challenge</span>
+                </h2>
+                <p class="text-light mb-4">
+                    Marine biofouling costs the shipping industry billions annually through increased fuel consumption 
+                    and maintenance. Current solutions rely on toxic copper-based paints that harm marine ecosystems.
+                </p>
+                <a href="{{ url_for('project') }}" class="btn btn-emerald">
+                    Learn More <i class="fas fa-arrow-right ms-2"></i>
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-dark-card border-emerald-dark rounded p-4">
+                    <div class="text-center">
+                        <i class="fas fa-chart-line text-emerald" style="font-size: 4rem;"></i>
+                        <p class="text-light mt-3 mb-0">Impact Visualization</p>
+                        <small class="text-muted">[Placeholder for impact infographic]</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Key Statistics -->
+<section class="py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-white mb-3">
+                Our <span class="text-emerald">Impact</span>
+            </h2>
+            <p class="text-light">Proven results from our comprehensive research and testing</p>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-body">
+                        <div class="display-4 fw-bold text-emerald mb-2">85%</div>
+                        <p class="text-light mb-0">Barnacle Settlement Reduction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-body">
+                        <div class="display-4 fw-bold text-emerald mb-2">72h</div>
+                        <p class="text-light mb-0">Enzyme Stability Duration</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-body">
+                        <div class="display-4 fw-bold text-emerald mb-2">0%</div>
+                        <p class="text-light mb-0">Cytotoxicity to Marine Life</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-body">
+                        <div class="display-4 fw-bold text-emerald mb-2">95%</div>
+                        <p class="text-light mb-0">Biodegradation Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="{{ url_for('results') }}" class="btn btn-outline-emerald">
+                View Detailed Results <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Research Highlights -->
+<section class="py-5 bg-dark-secondary">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-white mb-3">
+                Research <span class="text-emerald">Highlights</span>
+            </h2>
+            <p class="text-light">Explore our comprehensive approach to marine biotechnology</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-flask text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald">Wet Lab</h5>
+                        <p class="text-light small mb-3">
+                            Enzyme production, CLEA synthesis, and comprehensive bioassays
+                        </p>
+                        <a href="{{ url_for('wet_lab') }}" class="btn btn-outline-emerald btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-laptop text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald">Dry Lab</h5>
+                        <p class="text-light small mb-3">
+                            Computational modeling and bioinformatics analysis
+                        </p>
+                        <a href="{{ url_for('dry_lab') }}" class="btn btn-outline-emerald btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-shield-alt text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald">Safety</h5>
+                        <p class="text-light small mb-3">
+                            Comprehensive safety protocols and risk assessment
+                        </p>
+                        <a href="{{ url_for('safety') }}" class="btn btn-outline-emerald btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-users text-emerald fs-1 mb-3"></i>
+                        <h5 class="text-emerald">Team</h5>
+                        <p class="text-light small mb-3">
+                            Dedicated students and expert advisors
+                        </p>
+                        <a href="{{ url_for('team') }}" class="btn btn-outline-emerald btn-sm">Meet Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5">
+    <div class="container">
+        <div class="card bg-dark-card border-emerald-dark">
+            <div class="card-body p-5 text-center">
+                <h2 class="text-emerald mb-3">Interested in Our Research?</h2>
+                <p class="text-light mb-4">
+                    Connect with us to learn more about Barnacure and explore collaboration opportunities
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                    <a href="{{ url_for('contact') }}" class="btn btn-emerald">
+                        <i class="fas fa-envelope me-2"></i>Get in Touch
+                    </a>
+                    <a href="{{ url_for('project') }}" class="btn btn-outline-emerald">
+                        <i class="fas fa-book me-2"></i>Read Our Research
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,164 @@
+{% extends "layout.html" %}
+
+{% block title %}Wet Lab - Barnacure | iGEM 2025{% endblock %}
+
+{% block content %}
+<section class="py-5 mt-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-white mb-4">
+                Wet <span class="text-emerald">Lab</span>
+            </h1>
+            <p class="fs-5 text-light mx-auto" style="max-width: 800px;">
+                Our experimental approach combines enzyme engineering, CLEA synthesis, and comprehensive testing protocols
+                to validate the Barnacure system.
+            </p>
+        </div>
+
+        <!-- Main Lab Sections -->
+        <div class="row mb-5">
+            <div class="col-lg-4 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-body">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-flask text-emerald fs-1"></i>
+                        </div>
+                        <h4 class="text-emerald text-center mb-3">Enzyme Production</h4>
+                        <ul class="text-light list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Recombinant protein expression in E. coli</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Purification using affinity chromatography</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Activity assays and characterization</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Optimization of expression conditions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-body">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-vial text-emerald fs-1"></i>
+                        </div>
+                        <h4 class="text-emerald text-center mb-3">CLEA Synthesis</h4>
+                        <ul class="text-light list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Cross-linking agent optimization</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Aggregation condition testing</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Stability and activity retention</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Morphological characterization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card bg-dark-card border-emerald-dark h-100">
+                    <div class="card-body">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-microscope text-emerald fs-1"></i>
+                        </div>
+                        <h4 class="text-emerald text-center mb-3">Bioassays</h4>
+                        <ul class="text-light list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Barnacle settlement inhibition tests</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Protein adhesion disruption assays</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Cytotoxicity evaluations</li>
+                            <li class="mb-2"><i class="fas fa-check text-emerald me-2"></i>Environmental impact studies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Protocols Section -->
+        <div class="row mb-5">
+            <div class="col-lg-6 mb-4">
+                <h3 class="text-emerald mb-4">
+                    <i class="fas fa-clipboard-list me-2"></i>Experimental Protocols
+                </h3>
+                
+                <div class="card bg-dark-secondary border-emerald-dark mb-4">
+                    <div class="card-body">
+                        <h5 class="text-emerald-light">Protein Expression Protocol</h5>
+                        <div class="text-light small mb-3">
+                            <p><strong>Duration:</strong> 48-72 hours</p>
+                            <p><strong>Host:</strong> E. coli BL21(DE3)</p>
+                            <p><strong>Induction:</strong> IPTG (0.5 mM)</p>
+                            <p><strong>Temperature:</strong> 18°C overnight</p>
+                        </div>
+                        <a href="{{ url_for('protocols') }}" class="btn btn-outline-emerald btn-sm">
+                            <i class="fas fa-file-alt me-2"></i>View Full Protocol
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card bg-dark-secondary border-emerald-dark">
+                    <div class="card-body">
+                        <h5 class="text-emerald-light">CLEA Formation Protocol</h5>
+                        <div class="text-light small mb-3">
+                            <p><strong>Cross-linker:</strong> Glutaraldehyde (2.5%)</p>
+                            <p><strong>Buffer:</strong> Phosphate buffer pH 7.4</p>
+                            <p><strong>Incubation:</strong> 4°C, 2 hours</p>
+                            <p><strong>Washing:</strong> 3x with PBS</p>
+                        </div>
+                        <a href="{{ url_for('protocols') }}" class="btn btn-outline-emerald btn-sm">
+                            <i class="fas fa-file-alt me-2"></i>View Full Protocol
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <h3 class="text-emerald mb-4">
+                    <i class="fas fa-tools me-2"></i>Laboratory Setup
+                </h3>
+                
+                <div class="card bg-dark-secondary border-emerald-dark mb-4">
+                    <div class="card-body">
+                        <div class="bg-dark-card rounded p-4 text-center mb-3">
+                            <i class="fas fa-microscope text-emerald" style="font-size: 4rem;"></i>
+                            <p class="text-light mt-3 mb-1">Laboratory Equipment Photo</p>
+                            <small class="text-muted">[Placeholder for lab setup image]</small>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="text-emerald-light mb-3">Key Equipment</h5>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="card bg-dark-secondary border-emerald-dark">
+                            <div class="card-body text-center">
+                                <h6 class="text-emerald">Bioreactor System</h6>
+                                <p class="text-light small mb-0">For controlled protein expression</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-dark-secondary border-emerald-dark">
+                            <div class="card-body text-center">
+                                <h6 class="text-emerald">HPLC System</h6>
+                                <p class="text-light small mb-0">Protein purification and analysis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-dark-secondary border-emerald-dark">
+                            <div class="card-body text-center">
+                                <h6 class="text-emerald">Spectrophotometer</h6>
+                                <p class="text-light small mb-0">Enzyme activity measurements</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card bg-dark-secondary border-emerald-dark">
+                            <div class="card-body text-center">
+                                <h6 class="text-emerald">Flow Chambers</h6>
+                                <p class="text-light small mb-0">Barnacle settlement assays</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
